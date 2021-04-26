@@ -31,7 +31,7 @@ void handleInterrupt(uint32_t microSeconds)
 	if(microSeconds > INDEX_TIME)
 	{
 #if GENERATE_STATISTICS
-		zeroBitAverage(microSeconds);
+		indexBitAverage(microSeconds);
 #endif
 		if(receivedIndexBit == 1)
 		{
